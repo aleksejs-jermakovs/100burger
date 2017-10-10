@@ -1,0 +1,49 @@
+body {
+  background-image: url(images/background_1.jpg);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu {
+  margin-top: 5%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    background: rgba(0,0,0,0.4);
+    font-family: Brush Script Std, Brush Script MT, cursive;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white;
+    color: black;
+}
+
+.menu-item{
+
+}
+
+.burger-image {
+  margin:4px;
+}
