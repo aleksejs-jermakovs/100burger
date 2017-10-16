@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script/scrollTopButton.js"></script>
 
 </head>
 
@@ -49,7 +50,66 @@
         <!-- <a href="#">
             <img src="images/Burgers/tablo.jpg" width="100%" class="img-thumbnail"/>
           </a>-->
-<div>
+
+    <div class="responsive" >
+      <div class="burger-item" id="bavarijasBurg">
+
+          <img src="images/Burgers/bavarijas-s.gif" alt="Trolltunga Norway" width="300" height="200">
+
+        <div class="desc"><p><b>Bavarijas Burgers</b><br>Sastavs:<br>Cuku kupati, marruktu merce, sauleti kaposti, zilie sipoli, melna maizite.<br>Cena:<br>4,90 €</p></div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Bavarijas Burgers</h2>
+    </div>
+    <div class="modal-body">
+      <img src="images/Burgers/bavarijas-s.gif" alt="Trolltunga Norway" width="300" height="200">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>4,90 €</h3>
+    </div>
+  </div>
+
+</div>
+<script src="script/burgerOnClick.js"></script>
+
+    <div class="responsive">
+      <div class="burger-item">
+        <a target="_blank" href="images/Burgers/bavarijas-s.gif">
+          <img src="images/Burgers/bavarijas-s.gif" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc"><p><b>Bavarijas Burgers</b><br>Sastavs:<br>Cuku kupati, marruktu merce, sauleti kaposti, zilie sipoli, melna maizite.<br>Cena:<br>4,90 €</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="burger-item">
+        <a target="_blank" href="images/Burgers/bavarijas-s.gif">
+          <img src="images/Burgers/bavarijas-s.gif" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc"><p><b>Bavarijas Burgers</b><br>Sastavs:<br>Cuku kupati, marruktu merce, sauleti kaposti, zilie sipoli, melna maizite.<br>Cena:<br>4,90 €</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="burger-item">
+        <a target="_blank" href="images/Burgers/bavarijas-s.gif">
+          <img src="images/Burgers/bavarijas-s.gif" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc"><p><b>Bavarijas Burgers</b><br>Sastavs:<br>Cuku kupati, marruktu merce, sauleti kaposti, zilie sipoli, melna maizite.<br>Cena:<br>4,90 €</p></div>
+      </div>
+    </div>
+
+<!--<div>
         <a href="#">
           <img src="images/Burgers/bavarijas-s.gif" width="20%"  style="border: 4px solid white;"/>
         </a>
@@ -165,7 +225,7 @@
 
         <a href="#">
             <img src="images/Burgers/megaburg.jpg" width="40%" class="img-thumbnail burger-image"/>
-          </a>
+          </a>-->
       </div>
     </div>
 
@@ -178,26 +238,11 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
   </div>
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {
-      scrollFunction()
-    };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
-      }
-    }
+  <div class="footer">
+  <p>Footer</p>
+</div>
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Chrome, Safari and Opera
-      document.documentElement.scrollTop = 0; // For IE and Firefox
-    }
-  </script>
 </body>
 
 </html>
